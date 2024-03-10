@@ -44,6 +44,16 @@
 
         .project:hover .description {
             display: block;
+            position: absolute;
+            bottom: -65px; 
+            left: 0;
+            width: 100%;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            z-index: 1; 
         }
 
         .project:hover {
@@ -55,19 +65,6 @@
             font-weight: bold;
             font-size: 18px;
             margin-bottom: 10px;
-        }
-
-        .description {
-            display: none;
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            border-radius: 5px;
-            color: #000;
-            font-size: 14px;
         }
 
         .active {
@@ -149,34 +146,6 @@
                 </div>
 
                 <div class="project">
-                    <a href="https://www.google.co.uk/">Project 5</a>
-                    <div class="description">Project 5 Description</div>
-                </div>
-
-                <div class="project">
-                    <a href="https://www.google.co.uk/">Project 6</a>
-                    <div class="description">Project 6 Description</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.toc');
-            sections.forEach(section => {
-                section.addEventListener('click', function() {
-                    const sectionId = this.getAttribute('data-section');
-                    const activeSection = document.querySelector(`#${sectionId}`);
-                    sections.forEach(s => s.classList.remove('active'));
-                    this.classList.add('active');
-                    document.querySelectorAll('.ab, .pp').forEach(section => section.classList.remove('active'));
-                    activeSection.classList.add('active');
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+                    <a href="https://www.google.co.uk/">Project
 
 
