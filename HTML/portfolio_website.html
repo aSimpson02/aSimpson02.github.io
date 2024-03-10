@@ -46,6 +46,10 @@
             display: block;
         }
 
+        .project:hover {
+            background-color: black; 
+        }
+
         .project-name {
             color: #fff;
             font-weight: bold;
@@ -56,9 +60,9 @@
         .description {
             display: none;
             position: absolute;
-            top: 50%;
+            bottom: -50px;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             background-color: rgba(255, 255, 255, 0.8);
             padding: 10px;
             border-radius: 5px;
@@ -174,4 +178,5 @@
     </script>
 </body>
 </html>
+
 
