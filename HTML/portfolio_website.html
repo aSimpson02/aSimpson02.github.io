@@ -84,6 +84,24 @@
             background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=dT%2fKQI0U&id=3280C833C66C4F86DE4787818D6670EB7881FA75&thid=OIP.dT_KQI0UK5AM0eq36iXAKQHaE4&mediaurl=https%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f150000%2fvelka%2ftropical-beach-1454007190ZAK.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.753fca408d142b900cd1eab7ea25c029%3frik%3ddfqBeOtwZo2Bhw%26pid%3dImgRaw%26r%3d0&exph=1267&expw=1920&q=beach&simid=608004654957205688&FORM=IRPRST&ck=3210ED38977A243EDBCCD37ADBF126FF&selectedIndex=9&itb=0&ajaxhist=0&ajaxserp=0');
             background-size: cover;
         }
+
+        /* Custom styles for projects 4-6 */
+        .row-below {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .row-below .project {
+            width: calc(30% - 20px);
+            margin: 10px;
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -116,7 +134,24 @@
                 <a href="https://www.google.co.uk/">Project 3</a>
                 <div class="description">Project 3 Description</div>
             </div>
-            <!-- More projects here -->
+
+            <!-- Projects 4-6 -->
+            <div class="row-below">
+                <div class="project">
+                    <a href="https://www.google.co.uk/">Project 4</a>
+                    <div class="description">Project 4 Description</div>
+                </div>
+
+                <div class="project">
+                    <a href="https://www.google.co.uk/">Project 5</a>
+                    <div class="description">Project 5 Description</div>
+                </div>
+
+                <div class="project">
+                    <a href="https://www.google.co.uk/">Project 6</a>
+                    <div class="description">Project 6 Description</div>
+                </div>
+            </div>
         </div>
     </div>
 
