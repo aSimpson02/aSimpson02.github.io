@@ -3,43 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio_website</title>
+    <title>Portfolio Website</title>
     <style>
-        body{
+        body {
             align-content: center;
             background-color: black;
             color: aliceblue;
         }
+
+        .project {
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid transparent; 
+            transition: border 0.3s ease; 
+            position: relative; 
+        }
+
+        .project:hover {
+            border-color: aliceblue;
+        }
+
+        .description {
+            position: absolute;
+            top: 100%; 
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: aliceblue;
+            color: black;
+            padding: 5px;
+            display: none; 
+        }
+
+        .project:hover .description {
+            display: block; 
+        }
     </style>
-    <!-- add style tag here -->
 </head>
 <body>
     <h1>Annabel Simpson</h1>
 
-    <!--table of content in sidebar of website -->
-    <p class = "toc">Home</p>
-    <p class = "toc">About</p>
+    <!-- Table of content in sidebar of website -->
+    <p class="toc">Home</p>
+    <p class="toc">About</p>
 
-    <h3 class = "ab">Who am i?</h3>
-    <p class = "ab">description about me: uni student at UAL completing Creative computing in summer 2025....</p>
+    <h3 class="ab">Who am I?</h3>
+    <p class="ab">Description about me: uni student at UAL completing Creative computing in summer 2025....</p>
 
+    <p class="toc">Portfolio Projects</p>
 
-
-    <p class = "toc">Portfolio Projects</p>
-
-
-    <p class = "header">Portfolio Projects</p>
-    <a href="https://openai.com">1</a>
-    <a href="https://openai.com">2</a>
-    <a href="https://openai.com">3</a>
-    <a href="https://openai.com">4</a>
-    <a href="https://openai.com">5</a>
-    <a href="https://openai.com">6</a>
-
-
-
-
-
-
+    <div class="project">
+        <a href="https://openai.com">1</a>
+        <div class="description">Project 1 Description</div>
+    </div>
+    <div class="project">
+        <a href="https://openai.com">2</a>
+        <div class="description">Project 2 Description</div>
+    </div>
+    <div class="project">
+        <a href="https://openai.com">3</a>
+        <div class="description">Project 3 Description</div>
+    </div>
+    <div class="project">
+        <a href="https://openai.com">4</a>
+        <div class="description">Project 4 Description</div>
+    </div>
+    <div class="project">
+        <a href="https://openai.com">5</a>
+        <div class="description">Project 5 Description</div>
+    </div>
+    <div class="project">
+        <a href="https://openai.com">6</a>
+        <div class="description">Project 6 Description</div>
+    </div>
 </body>
 </html>
+
