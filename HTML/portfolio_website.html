@@ -7,7 +7,7 @@
     <style>
         body {
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: black;
@@ -22,10 +22,11 @@
             position: fixed;
             overflow-y: auto;
             padding: 20px;
+            right: 0;
         }
 
         #content {
-            margin-left: 220px;
+            margin-right: 220px;
             padding: 20px;
         }
 
@@ -62,7 +63,8 @@
         <div class="toc" data-section="about">About</div>
         <div class="toc" data-section="portfolio">Portfolio Projects</div>
     </div>
-    
+
+
     <div id="content">
         <div id="home" class="ab active"></div>
         <div id="about" class="ab"> 
