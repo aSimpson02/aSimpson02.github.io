@@ -44,9 +44,10 @@
             position: relative;
             cursor: pointer;
             border: 2px solid white; 
+            flex: 1 1 auto; 
         }
 
-        /*.project:hover .description {
+        .project:hover .description {
             display: block;
             position: absolute;
             bottom: -65px; 
@@ -62,7 +63,7 @@
 
         .project:hover {
             background-color: black; 
-        }*/
+        }
 
         .project-name {
             color: #fff;
@@ -161,21 +162,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.toc');
-            sections.forEach(section => {
-                section.addEventListener('click', function() {
-                    const sectionId = this.getAttribute('data-section');
-                    const activeSection = document.querySelector(`#${sectionId}`);
-                    sections.forEach(s => s.classList.remove('active'));
-                    this.classList.add('active');
-                    document.querySelectorAll('.ab, .pp').forEach(section => section.classList.remove('active'));
-                    activeSection.classList.add('active');
-                });
-            });
-        });
-    </script>
 </body>
 </html>
