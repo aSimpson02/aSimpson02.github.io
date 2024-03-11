@@ -31,7 +31,7 @@
         scene.add(light);
 
         const loader = new THREE.GLTFLoader();
-        loader.load('HTML/website.glb', function (gltf) {
+        loader.load('website.glb', function (gltf) {
             const model = gltf.scene;
             scene.add(model);
         });
