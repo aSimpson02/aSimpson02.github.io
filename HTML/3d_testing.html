@@ -15,11 +15,9 @@
             display: block;
         }
     </style>
-    <script src="C:\Users\simps\OneDrive\Documents\GitHub\portfolio_webpage\HTML\GLTFLoader.js"></script>
-    <script src="C:\Users\simps\OneDrive\Documents\GitHub\portfolio_webpage\HTML\three.module.min.js"></script>
 </head>
 <body>
-    <script>
+    <script type="module">
         import * as THREE from './three.module.js';
         import { GLTFLoader } from './GLTFLoader.js';
 
@@ -33,8 +31,8 @@
         light.position.set(0, 1, 0);
         scene.add(light);
     
-        const loader = new THREE.GLTFLoader();
-        loader.load('C:/Users/simps/OneDrive/Documents/GitHub/portfolio_webpage/HTML/website.glb', function (gltf) {
+        const loader = new GLTFLoader();
+        loader.load('HTML/website.glb', function (gltf) {
             const model = gltf.scene;
             scene.add(model);
         }, undefined, function (error) {
@@ -50,9 +48,5 @@
     
         animate();
     </script>
-    </body>
-    </html>
-
-
-
-
+</body>
+</html>
