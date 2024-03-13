@@ -72,19 +72,6 @@
             margin-bottom: 10px;
         }
 
-        .active {
-            font-weight: bold;
-            color: white;
-        }
-
-        .ab, .pp {
-            display: none;
-        }
-
-        .ab.active, .pp.active {
-            display: block;
-        }
-
         #home {
             width: 100%; 
             height: 100vh;
@@ -114,28 +101,22 @@
 </head>
 <body>
     <div id="sidebar">
-        <div class="toc active" data-section="home">Home</div>
+        <div class="toc" data-section="home">Home</div>
         <div class="toc" data-section="about">About</div>
         <div class="toc" data-section="portfolio">Portfolio Projects</div>
     </div>
 
     <div id="content">
-        <div id="home" class="ab active"></div>
-        <div id="about" class="ab"> 
-            <h1>Hi, I’m Annabel</h1>
-            <p>Basically, I'm passionate about data science and love exploring the world of technology.</p>
+        <div id="home">
+            <h1>Home</h1>
+            <p>This is the home section.</p>
         </div>
-
-    <div id="content">
-        <div id="home" class="ab active"></div>
-        <div id="about" class="ab"> 
+        <div id="about"> 
             <h1>About Me</h1>
-            <p>Born and raised in London, I'm currently pursuing a Creative Computing BSc at UAL, with an expected graduation in summer 2025.
-
-                I primarily use Python in my projects, but I also possess a diverse set of skills, spanning from data science and machine learning to web development.</p>
+            <p>Hi, I’m Annabel. Basically, I'm passionate about data science and love exploring the world of technology. Born and raised in London, I'm currently pursuing a Creative Computing BSc at UAL, with an expected graduation in summer 2025. I primarily use Python in my projects, but I also possess a diverse set of skills, spanning from data science and machine learning to web development.</p>
         </div>
 
-        <div id="portfolio" class="pp"> 
+        <div id="portfolio"> 
             <h2>Portfolio Projects</h2>
             <div class="project">
                 <a href="https://www.google.co.uk/">Project 1</a>
