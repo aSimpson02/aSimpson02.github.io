@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Russo One', sans-serif;
+            background-color: black;
+            color: #fff;
+        }
+
+        #video-container {
+            text-align: center;
+        }
+
+        #video-container video {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: 0 auto;
+        }
+
+        #about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #about h1 {
+            margin-left: 20px; /* Adjust as needed */
+        }
+
+        #about p {
+            margin-right: 20px; /* Adjust as needed */
+            text-align: right;
+        }
+
+        #portfolio {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid white;
+        }
+
+        .project-name {
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .project-name a {
+            color: #fff; /* Set link color to white */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .description {
+            display: none;
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .project:hover .description {
+            display: block;
+        }
+
+        .top-bar {
+            background-color: black;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="menu">
+                <a href="portfolio_website.html">Home</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <h1>Contact</h1>
+        <p>...</p>
+    </div>
+</body>

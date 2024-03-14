@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+#video-container {
+    text-align: center;
+}
+
+#video-container video {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0 auto;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#about h1 {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+#about p {
+    margin-right: 20px; /* Adjust as needed */
+    text-align: right;
+}
+
+#portfolio {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.project-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-name a {
+    color: #fff; /* Set link color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+.description {
+    display: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.project:hover .description {
+    display: block;
+}

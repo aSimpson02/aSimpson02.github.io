@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website- about</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Russo One', sans-serif;
+            background-color: black;
+            color: #fff;
+        }
+
+        #video-container {
+            text-align: center;
+        }
+
+        #video-container video {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: 0 auto;
+        }
+
+        #about {
+            padding: 20px;
+            margin-bottom: 40px; /* Increased separation */
+        }
+
+        #about h1 {
+            margin-left: 20px;
+        }
+
+        #about p {
+            margin-right: 20px;
+            text-align: right;
+        }
+
+        #portfolio {
+            padding: 20px;
+        }
+
+        .project {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid rgb(123, 119, 119);
+        }
+
+        .project-name {
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .project-name a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .description {
+            display: none;
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .project:hover .description {
+            display: block;
+        }
+
+        .top-bar {
+            background-color: black;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="menu">
+                <a href="portfolio_website.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+<div id="about">
+    <h1>About Me</h1>
+    <p>Hi, I’m Annabel. Basically, I'm passionate about data science and love exploring the world of technology. Born and raised in London, I'm currently pursuing a Creative Computing BSc at UAL, with an expected graduation in summer 2025. I primarily use Python in my projects, but I also possess a diverse set of skills, spanning from data science and machine learning to web development.</p>
+</div>
+
+<div id="portfolio">
+    <h2>Projects</h2>
+    <div class="project">
+        <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Cymatics linear regression project</a></div>
+        <div class="description">Using linear regression to predict an average frequency from a Spotify playlist. Cymatics represents the data visualization of this result.</div>
+    </div>
+
+    <div class="project">
+        <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Music generation project</a></div>
+        <div class="description">Using a classical MIDI Dataset to predict and generate music. Deep neural networks were used for this project.</div>
+    </div>
+
+    <div class="project">
+        <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Water sanitation Data Visualization</a></div>
+        <div class="description">Using global data to see the water sanitation throughout the world. My results and visualizations were shown on a world map.</div>
+    </div>
+
+    <div class="project">
+        <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Twitch gaming data analysis</a></div>
+        <div class="description">Utilizing SQL queries to analyze data from gaming data on Twitch. My findings were visualized using Python.</div>
+    </div>
+
+    <div class="project">
+        <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Image processing Deep learning</a></div>
+        <div class="description">Training a machine learning model using deep neural networks to categorize images in four different ways.</div>
+    </div>
+</div>
+
+</body>
+</html>

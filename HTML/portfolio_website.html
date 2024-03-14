@@ -14,132 +14,48 @@
             font-family: 'Russo One', sans-serif;
             background-color: black;
             color: #fff;
+            text-align: center; /* Align all content center */
         }
 
-        #content {
-            padding: 20px;
-            margin-right: 200px; 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .project {
-            width: calc(30% - 20px); 
-            margin: 10px;
-            background-color: black;
-            padding: 20px;
+        #video-container {
             text-align: center;
-            position: relative;
-            cursor: pointer;
-            border: 2px solid white; 
-            flex: 1 1 auto; 
+            margin-bottom: 20px; /* Add some space below the video */
         }
 
-        .project:hover .description {
-            display: block;
-            position: absolute;
-            bottom: -65px; 
-            left: 0;
-            width: 100%;
-            background-color: black;
-            padding: 10px;
-            border-radius: 5px;
-            color: white;
-            font-size: 14px;
-            z-index: 1; 
+        #video-container video {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: 0 auto;
         }
 
-        .project:hover {
-            background-color: black; 
+        .links {
+            margin-bottom: 20px;
         }
 
-        .project-name {
+        .links a {
             color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 10px;
+            text-decoration: none;
+            margin: 0 10px; 
         }
 
-        #home {
-            width: 100%; 
-            height: 100vh;
-            background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=dT%2fKQI0U&id=3280C833C66C4F86DE4787818D6670EB7881FA75&thid=OIP.dT_KQI0UK5AM0eq36iXAKQHaE4&mediaurl=https%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f150000%2fvelka%2ftropical-beach-1454007190ZAK.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.753fca408d142b900cd1eab7ea25c029%3frik%3ddfqBeOtwZo2Bhw%26pid%3dImgRaw%26r%3d0&exph=1267&expw=1920&q=beach&simid=608004654957205688&FORM=IRPRST&ck=3210ED38977A243EDBCCD37ADBF126FF&selectedIndex=9&itb=0&ajaxhist=0&ajaxserp=0');
-            background-size: cover;
-        }
-
-        
-        .row-below {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .row-below .project {
-            width: calc(30% - 20px);
-            margin: 10px;
-            background-color: black;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            cursor: pointer;
-            border: 2px solid white; 
-        }
     </style>
 </head>
 <body>
 
-        <div id="home">
-            <h1>WELCOME</h1>
-            <!-- Replace 'your_animation.mp4' with the URL/path to your animation file -->
-            <video autoplay loop muted playsinline style="width: 100%; height: 100%;">
-                <source src="HTML/blender_ani.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+<h1>Welcome</h1>
 
-        <div id="about"> 
-            <h1>About Me</h1>
-            <p>Hi, I’m Annabel. Basically, I'm passionate about data science and love exploring the world of technology. Born and raised in London, I'm currently pursuing a Creative Computing BSc at UAL, with an expected graduation in summer 2025. I primarily use Python in my projects, but I also possess a diverse set of skills, spanning from data science and machine learning to web development.</p>
-        </div>
+<div id="video-container">
+    <img src="path/to/your/gif/file.gif" alt="Your GIF Animation">
+</div>
 
-        <div id="portfolio"> 
-            <h2>Portfolio Projects</h2>
-            <div class="project">
-                <a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Cymatics linear regression project</a>
-                <div class="description">Project 1 Description</div>
-            </div>
+<div class="links">  
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</div>
 
-            <div class="project">
-                <a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Music generation project</a>
-                <div class="description">Project 2 Description</div>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Water sanitation Data Visualisation</a>
-                <div class="description">Project 3 Description</div>
-            </div>
-
-            <!-- Projects 4-6 -->
-            <div class="row-below">
-                <div class="project">
-                    <a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">A/B advertisement data vis</a>
-                    <div class="description">Project 4 Description</div>
-                </div>
-
-                <div class="project">
-                    <a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Image processing Deep learning</a>
-                    <div class="description">Project 5 Description</div>
-                </div>
-
-                <div class="project">
-                    <a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">SQL project</a>
-                    <div class="description">Project 6 Description</div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
+
+
+
 

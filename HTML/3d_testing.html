@@ -16,7 +16,7 @@
         }
     </style>
 </head>
-<body
+<body>
 
     <script type="module">
         import * as THREE from './three.module.min.js';
@@ -33,7 +33,7 @@
         scene.add(light);
     
         const loader = new GLTFLoader();
-        loader.load('HTML/website.glb', function (gltf) {
+        loader.load('HTML/final_website.glb', function (gltf) {
             const model = gltf.scene;
             scene.add(model);
         }, undefined, function (error) {
@@ -51,3 +51,4 @@
     </script>
 </body>
 </html>
+
