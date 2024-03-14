@@ -8,76 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Russo One', sans-serif;
             background-color: black;
             color: #fff;
-        }
-
-        #video-container {
-            text-align: center;
-        }
-
-        #video-container video {
-            max-width: 100%;
-            max-height: 100vh;
-            margin: 0 auto;
-        }
-
-        #about {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-
-        #about h1 {
-            margin-left: 20px; /* Adjust as needed */
-        }
-
-        #about p {
-            margin-right: 20px; /* Adjust as needed */
-            text-align: right;
-        }
-
-        #portfolio {
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .project {
-            background-color: black;
-            padding: 20px;
-            text-align: center;
-            cursor: pointer;
-            border: 2px solid white;
-        }
-
-        .project-name {
-            color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .project-name a {
-            color: #fff; /* Set link color to white */
-            text-decoration: none; /* Remove underline */
-        }
-
-        .description {
-            display: none;
-            color: white;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .project:hover .description {
-            display: block;
         }
 
         .top-bar {
@@ -117,8 +54,29 @@
     </div>
 
 
-    <div id="contact">
-        <h1>Contact</h1>
-        <p>...</p>
+    <h1 class="text-center mt-5 mb-4">Don't be shy...</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
