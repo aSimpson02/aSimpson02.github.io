@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
+ body {
             margin: 0;
             font-family: 'Russo One', sans-serif;
             background-color: black;
@@ -20,22 +20,16 @@
         .top-bar {
             background-color: black;
             color: #fff;
-            padding: 10px 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 10px 20px; /* Increased padding */
             display: flex;
-            justify-content: flex-end; 
+            justify-content: space-between; /* Align items to both ends */
             align-items: center;
-            padding: 0 20px;
         }
 
         .menu a {
             color: #fff;
             text-decoration: none;
-            margin-left: 20px;
+            margin-right: 20px; 
             font-size: 18px;
         }
 
@@ -45,12 +39,25 @@
         }
 
         .social-icons img {
-            width: 30px; 
-            margin-left: 20px;
+            width: 30px;
+            margin-right: 20px; 
             cursor: pointer;
         }
 
+        .content {
+            padding: 50px; 
+        }
 
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column; 
+                padding: 20px;
+            }
+
+            .menu {
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
