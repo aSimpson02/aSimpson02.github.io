@@ -24,28 +24,32 @@
             display: flex;
             justify-content: space-between; 
             align-items: center;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
         }
 
         .menu {
-            order: 2; 
+            order: 1; /* Set the order to 1 to appear first */
+            width: 100%; /* Occupy full width */
+            text-align: center; /* Center align the links */
+            margin-bottom: 10px; /* Add some space between top bar and URLs */
         }
 
         .menu a {
             color: #fff;
             text-decoration: none;
-            margin-left: 20px; 
+            margin: 0 10px; /* Add some space between links */
             font-size: 18px;
         }
 
         .social-icons {
             display: flex;
             align-items: center;
-            order: 1;
+            order: 2; /* Set the order to 2 to appear second */
         }
 
         .social-icons img {
             width: 30px;
-            margin-right: 20px; 
+            margin-right: 20px;
             cursor: pointer;
         }
 
@@ -62,12 +66,12 @@
             }
 
             .menu {
-                order: 1;
-                margin-top: 20px;
+                order: 2; /* Set the order to 2 for mobile */
+                margin-bottom: 20px; /* Add more space between top bar and URLs */
             }
 
             .social-icons {
-                order: 2; 
+                order: 1; /* Set the order to 1 for mobile */
             }
         }
     </style>
@@ -78,16 +82,18 @@
         <div class="container menu">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
-        <div class="social-icons">
-            <p>-- My Github</p>
+        <div class="social-icons">    
             <a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main" target="_blank">
                 <img src="github_logo.png" alt="GitHub Logo">
             </a>
-            <p>-- My LinkedIn</p>
+            <p>-- My Github</p>
+                
             <a href="www.linkedin.com/in/annabel-simpson-76686179" target="_blank">
                 <img src="linkdin_logo.png" alt="LinkedIn Logo">
             </a>
+            <p>-- My LinkedIn</p>
         </div>
     </div>
 
@@ -120,4 +126,5 @@
 
 </body>
 </html>
+
 
