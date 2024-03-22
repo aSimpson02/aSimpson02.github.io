@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website- about</title>
+    <title>Portfolio Website</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +19,13 @@
             justify-content: space-between; 
         }
 
-        #video-container {
-            text-align: center;
-        }
-
-        #video-container video {
-            max-width: 100%;
-            max-height: 100vh;
-            margin: 0 auto;
+        section {
+            padding: 20px;
+            width: 50%; 
         }
 
         #about {
-            padding: 20px;
-            margin-bottom: 40px; 
-            width: 50%;
+            background-color: #333; 
         }
 
         #about h1 {
@@ -44,18 +37,17 @@
             text-align: right;
         }
 
-        #portfolio {
-            padding: 20px;
-            width: 50%; 
+        #projects {
+            background-color: #555; 
         }
 
         .project {
             background-color: black;
             padding: 20px;
-            text-align: left;
+            text-align: left; 
             cursor: pointer;
             border: 1px solid rgb(123, 119, 119);
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
 
         .project-name {
@@ -81,48 +73,16 @@
             display: block;
         }
 
-        .top-bar {
-            background-color: black;
-            color: #fff;
-            padding: 10px 0;
-            text-align: right; 
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: flex-end; 
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 18px;
-        }
     </style>
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="container">
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="about">
+    <section id="about">
         <h1>About Me</h1>
         <p>Hi, I’m Annabel. Basically, I'm passionate about data science and love exploring the world of technology. Born and raised in London, I'm currently pursuing a Creative Computing BSc at UAL, with an expected graduation in summer 2025. I primarily use Python in my projects, but I also possess a diverse set of skills, spanning from data science and machine learning to web development.</p>
-    </div>
+    </section>
 
-    <div id="portfolio">
+    <section id="projects">
         <h1>Projects</h1>
         <div class="project">
             <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Cymatics linear regression project</a></div>
@@ -148,8 +108,7 @@
             <div class="project-name"><a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main">Image processing Deep learning</a></div>
             <div class="description">Training a machine learning model using deep neural networks to categorize images in four different ways.</div>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
-
