@@ -7,12 +7,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
     
     <style>
         body {
             margin: 0;
-            font-family: 'Russo One', sans-serif;
+            font-family: 'Alumni Sans', sans-serif;
             background-color: black;
             color: #fff;
             padding-top: 60px;
@@ -33,62 +33,34 @@
 
         .menu {
             order: 1; 
-            width: 100%; 
-            text-align: center; 
-            margin-bottom: 10px; 
+            width: 20%; 
+            text-align: left; 
+            padding-left: 20px; 
         }
 
         .menu a {
+            display: block;
             color: #fff;
             text-decoration: none;
-            margin: 0 10px; 
+            margin-bottom: 10px; 
             font-size: 18px;
         }
 
-        
-
-        .linkdin {
-            text-align: center; 
-            width: 100%;
-            margin-bottom: 10%;
-        }
-
-        .github {
-            text-align: center; 
-            width: 100%;
-            margin-bottom: 10%;
-        }
-
-        .github img,
-        .linkedin img {
-        width: 50px; 
-        height: auto; 
-        display: inline-block; 
-        margin-right: 10px; 
-        vertical-align: middle;
-        }
-        
-
         .content {
             padding: 50px;
-            text-align: center
+            text-align: center;
+            width: 80%; 
         }
 
         @media (max-width: 768px) {
-            .top-bar {
-                flex-direction: column;
-                padding: 20px;
-                justify-content: center; 
-                align-items: center; 
-            }
-
             .menu {
+                width: 100%; 
+                text-align: center; 
                 order: 2; 
-                margin-bottom: 20px; 
             }
 
-            .social-icons {
-                order: 4; 
+            .content {
+                width: 100%; 
             }
         }
     </style>
@@ -103,27 +75,21 @@
         </div>
     </div>
 
-
-    <div class = "github">
-        
+    <div class="github"> 
         <a href="https://github.com/aSimpson02/Portfolio-Projects/tree/main" target="_blank">
-            <div class = "github img">
-                <p>My Github</p>
-                <!--<img src="github_logo.png" alt="GitHub Logo">--> 
+            <div class="github img">
+                <p style="color: white;">My Github</p>
             </div>
         </a>
     </div>
      
-    
-    <div class = "linkdin">
-        <a href="www.linkedin.com/in/annabel-simpson-76686179" target="_blank">
-            <div class = "linkdin img">
-                <p>My LinkedIn</p>
-               <!--<img src="linkdin_logo.png" alt="LinkedIn Logo">--> 
+    <div class="linkdin">
+        <a href="https://www.linkedin.com/in/annabel-simpson-76686179/" target="_blank">
+            <div class="linkdin img">
+                <p style="color: white;">My LinkedIn</p>
             </div>
         </a>
     </div>
-
 
     <div class="content">
         <h1 class="text-center mt-5 mb-4">Don't be shy...</h1>
@@ -154,3 +120,4 @@
 
 </body>
 </html>
+
